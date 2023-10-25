@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- link a css: hojas de estilo en cascada -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+    <style>
+        tr, td, th{
+            border: 2px solid black;
+        }
+        h1 {
+            color: red;
+        }
+        p{
+            color: rgb(15, 75, 15)
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Soy la Página Producotos</h1>
+
+    <!-- Tablas en HTML -->
+    <table style="background: rgb(195, 195, 238);">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Provincia</th>
+                <th>Voto</th>
+            </tr>
+        </thead>
+        <tbody class="verde">
+            <tr>
+                <td>Pepe</td>
+                <td>Pérez</td>
+                <td>123456789</td>
+                <td>Misiones</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>987654321</td>
+                <td>Salta</td>
+                <td>NO</td>
+            </tr>
+            <tr rowspan="2">
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td rowspan="2">987654321</td>
+                <td>Salta</td>
+                <td>NO</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <!-- <td>987654321</td> -->
+                <td>Salta</td>
+                <td>NO</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total de Votos: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1 id="normal">Soy la Página Producotos</h1>
+
+    <h1 class="azul mayuscula" id="cursiva">Soy la Página Producotos</h1>
+
+    <h1>Soy la Página Producotos</h1>
+
+    <h1 class="verde">Soy la Página Producotos</h1>
+
+    <h1 class="azul">Soy la Página Producotos</h1>
+
+    <h1 class="azul">Soy la Página Producotos</h1>
+
+    <h1 class="azul" id="cursiva">Soy la Página Producotos</h1>
+
+    <p class="mayuscula">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa tempore quisquam porro modi, consectetur harum perspiciatis nobis, natus ab unde consequatur earum minus, cupiditate voluptatum. Blanditiis mollitia consectetur veritatis molestiae!
+    </p>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur <i> adipisicing elit. Impedit praesentium reprehenderit eius labore rem distinctio, iure sapient </i> e eum iusto dolor ut quas, fugiat nemo exercitationem voluptatibus incidunt? Ullam, id ut!
+    </p>
+
+    <img class="imagen"  src="https://cdn.conmebol.com/wp-content/uploads/2023/06/000_334P84K-1024x683.jpg" alt="Messi en la copa">
+
+    <img class="imagen"  src="https://cdn.conmebol.com/wp-content/uploads/2023/06/000_334P84K-1024x683.jpg" alt="Messi en la copa">
+
+    <img class="imagen"  src="https://cdn.conmebol.com/wp-content/uploads/2023/06/000_334P84K-1024x683.jpg" alt="Messi en la copa">
+
+    <img class="imagen"  src="https://cdn.conmebol.com/wp-content/uploads/2023/06/000_334P84K-1024x683.jpg" alt="Messi en la copa">
+    
+</body>
+</html>

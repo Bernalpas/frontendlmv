@@ -1,0 +1,37 @@
+.boton{
+    height: 100px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 100px;
+    background: #89AA47;
+}
+
+.cabecera{
+    background: #93268F;
+    height: 90px;
+}
+
+.cabecera li{
+    width: 150px;
+    background: #FEEDFC;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding: 10px;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.centrar-texto{
+    text-align: center;
+}

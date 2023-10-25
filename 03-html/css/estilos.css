@@ -1,0 +1,73 @@
+
+
+.azul{
+    color: blue;
+}
+
+/* el selector es una clase cuando lo llamamos con un punto al inicio */
+.verde{
+    color: green;
+}
+
+/* el selector es un id cuando lo llamamos con un numeral */
+#normal{
+    color: black;
+}
+
+#cursiva{
+    font-style: italic;
+}
+
+.mayuscula{
+    text-transform: uppercase;
+}
+
+p{
+    color: blue;
+}
+
+p i{
+    color: red;
+}
+
+.imagen{
+    border-top: 5px solid blue;
+    border-left: 5px dashed red;
+    border-right: 5px dotted green;
+    border-bottom: 5px double black;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    width: 250px;
+    height: 150px;
+    background: rgba(27, 27, 27, 0.041);
+}
+
+.imagen:hover{
+    width: 500px;
+}
+
+p{
+    border-top: 5px solid blue;
+    border-left: 5px dashed red;
+    border-right: 5px dotted green;
+    border-bottom: 5px double black;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    margin-left: 150px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.texto{
+    color: #89AA47;
+}
+
