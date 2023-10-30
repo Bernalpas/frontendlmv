@@ -1,3 +1,17 @@
+
+/* cosas que importo de la web */
+
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+
+/* reseteo de CSS: sacar los estilos por defecto que trae el navegador */
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .boton{
     height: 100px;
     width: 150px;
@@ -34,4 +48,21 @@ a{
 
 .centrar-texto{
     text-align: center;
+}
+
+h1{
+    margin-top: 45px;
+    margin-left: 45px;
+    font-size: 50px;
+/*     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+    font-family: 'Just Me Again Down Here', cursive;
+
+    font-weight: 900;
+    font-style: italic; 
+}
+
+p{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 36px;
 }

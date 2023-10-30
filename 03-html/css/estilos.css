@@ -27,11 +27,11 @@ p{
 }
 
 p i{
-    color: red;
+    color: rgb(255, 0, 0)
 }
 
 .imagen{
-    border-top: 5px solid blue;
+    border-top: 5px solid #0000ff;
     border-left: 5px dashed red;
     border-right: 5px dotted green;
     border-bottom: 5px double black;
@@ -55,7 +55,7 @@ p i{
 p{
     border-top: 5px solid blue;
     border-left: 5px dashed red;
-    border-right: 5px dotted green;
+    border-right: 5px dotted rgb(0, 255, 0);
     border-bottom: 5px double black;
     margin-top: 20px;
     margin-right: 50px;

@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/formulario.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+
+
     <title>Document</title>
 </head>
+
 <body>
-    
+
 
     <hr><!-- es una línea divisoria para estilo -->
 
@@ -25,36 +47,80 @@
 
     </header>
 
-    <h1>Formulario</h1>
+    <h1>
+        <span class="material-symbols-outlined">
+            Home
+        </span>
+        Formulario
+    </h1>
 
     <form action="" method="">
-        <label for="nombre">Nombre: </label>   <br>
-        <input type="text" name="nombre"/>      <br>
-        
+        <label for="nombre">Nombre: </label> <br>
+        <input type="text" name="nombre" /> <br>
+
         <label for="apellido">Apelllido: </label> <br>
-        <input type="text" name="apellido"/>      <br>
-        
-        <label for="password">Password: </label>  <br>
-        <input type="password" name="password"/> <br>
+        <input type="text" name="apellido" /> <br>
 
-        <label for="email">Email: </label>  <br>
-        <input type="email" name="email" required/> <br>
+        <label for="password">Password: </label> <br>
+        <input type="password" name="password" /> <br>
 
-        <label for="edad">Edad: </label>  <br>
-        <input type="number" name="edad" min="0" max="100"/> <br>
+        <label for="email">Email: </label> <br>
+        <input type="email" name="email" required /> <br>
+
+        <label for="edad">Edad: </label> <br>
+        <input type="number" name="edad" min="0" max="100" /> <br>
 
         <button type="submit">Guardar</button> <br>
 
         <input type="submit" value="Enviar Datos del Formulario"> <br>
 
-        <button class="boton" type="reset">Limpiar Datos</button>
+        <button class="boton" type="reset">Limpiar Datos</button> <br>
+
+        <label for="genero">M</label><br>
+        <input type="radio" name="genero" value="masculino"> <br>
+
+        <label for="genero">F</label><br>
+        <input type="radio" name="genero" value="femenino"><br>
+
+        <label for="genero">O</label><br>
+        <input type="radio" name="genero" value="otros"> <br>
+
+        <label for="hobby"> Hobby: </label> <br>
+        <label for="juagar">Juagar </label>
+        <input type="checkbox" value="juagar" name="jugar"> <br>
+
+        <label for="bailar">Bailar </label>
+        <input type="checkbox" value="bailar" name="bailar"> <br>
+
+        <label for="comentarios">Comentarios</label> <br>
+        <textarea name="comentarios" id="comentarios" cols="150" rows="10"></textarea>
+
+
 
     </form>
 
     <p class="centrar-texto">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum quo reiciendis beatae illo impedit veniam minus voluptatibus saepe tenetur sequi eligendi at nihil optio, fugit laborum consequuntur consectetur asperiores!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum quo reiciendis beatae illo impedit veniam
+        minus voluptatibus saepe tenetur sequi eligendi at nihil optio, fugit laborum consequuntur consectetur
+        asperiores!
+    </p>
+    <p class="centrar-texto">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum quo reiciendis beatae illo impedit veniam
+        minus voluptatibus saepe tenetur sequi eligendi at nihil optio, fugit laborum consequuntur consectetur
+        asperiores!
+    </p>
+    <p class="centrar-texto">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum quo reiciendis beatae illo impedit veniam
+        minus voluptatibus saepe tenetur sequi eligendi at nihil optio, fugit laborum consequuntur consectetur
+        asperiores!
+    </p>
+    <p class="centrar-texto">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam cum quo reiciendis beatae illo impedit veniam
+        minus voluptatibus saepe tenetur sequi eligendi at nihil optio, fugit laborum consequuntur consectetur
+        asperiores!
     </p>
 
 
 </body>
+
 </html>
