@@ -1,0 +1,62 @@
+
+body {
+    background: #f5e7d8;
+}
+
+.imagen{
+    width: 450px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    margin-bottom: 120px;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.producto{
+    border: solid 1px black;
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+}
+
+.padre{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    padding: 15px;
+    font-size: 20px;
+    background: rgb(102, 187, 102);
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+.navegar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+}
