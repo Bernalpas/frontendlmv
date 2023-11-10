@@ -24,7 +24,7 @@ function saludar() {
 }
 
 //saludar();
-
+//ES5
 function login() {
 
     let user = document.getElementById('email').value;
@@ -35,14 +35,14 @@ function login() {
     console.log(`El usuario es ${user} y la contraseña es ${password}`);
 
     if(user == "" || password == ""){
-        alert('Por favor ingrese un usuario y contraseña');
+        //alert('Por favor ingrese un usuario y contraseña');
+        location.href = 'error.html'
     }
 
     if(administrador.user == user && administrador.pass == password){
         //alert('Bienvenido Administrador');
         //console.log(__dirname);
-        window.location.href = 'administrador.html'
-        console.log(location.pathname)
+        location.href = 'administrador.html'
     }else{
         //alert('Usuario o contraseña incorrecta');
         //window.location.href = 'error.html'

@@ -17,6 +17,13 @@ JavaScript
 
 // comentario de una sóla línea
 
+//no se puede crear variables de esta forma
+/* 
+nombre Producto = 
+
+1235Pepe = 'hola' 
+*/
+
 //1. Variables   / palabras reservadas: son comandos exclusivos de javascript
 
 //Declaración de una variable
