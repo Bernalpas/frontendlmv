@@ -1,4 +1,4 @@
-data = [
+usuarios = [
     {
     moneda: "USD",
     casa: "oficial",

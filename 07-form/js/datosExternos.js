@@ -6,14 +6,8 @@
         .then(response => response.json())
         .then(data => console.log(data))
 
-
-
-    
-
         console.log('===============================================');
-        
-        
-        
+            
         fetch("data.js") //busca datos dentro de mi aplicación
         .then(response => response.json())
         .then(data => console.log(data));
@@ -24,6 +18,7 @@
 
 
     const URL = 'https://rickandmortyapi.com/api/character';
+    
 
     fetch(URL) //busca datos fuera de mi aplicación
     .then(response => response.json())
@@ -40,8 +35,7 @@
     console.log('===============================================');
 
     //1. Obtenemos el contenedor
-    let contenedor = document.getElementById('contenedorTarjetas');
-
+    let contenedorTarjetas = document.getElementById('contenedorTarjetas');
 
     //2. Obtenemos los datos mediante el fetch
     fetch(URL) 
@@ -50,6 +44,8 @@
 
         //3. Guardar los datos en una variable
         const personajes = data.results;
+
+        console.log(`los personajes son: ${personajes}`);
 
         //console.log(personajes);
 
@@ -60,7 +56,7 @@
             let card = document.createElement('div');
             card.classList.add('card');
             card.style.width = '18rem';
-            //card.style.background = 'red';
+            card.style.margin = '10px';
 
             //6. Creamos la imagen
             let imagen = document.createElement('img');
@@ -69,10 +65,21 @@
 
             card.appendChild(imagen);
 
+            //Creamos el contenedor para el título, descripción y botón
+            let contenedorTitulo = document.createElement('div');
+            contenedorTitulo.classList = 'card-body';
 
-            contenedor.appendChild(card);
+            //7. Creamos el titulo de la card
+            let titulo = document.createElement('h5');
+            titulo.classList.add('card-title');
+            titulo.style.textAlign = 'center';
+            titulo.textContent = personaje.name;
 
+            contenedorTitulo.appendChild(titulo);
 
+            //subimos el contenedot del titulo a la card
+            card.appendChild(contenedorTitulo);
+
+            contenedorTarjetas.appendChild(card);
         });
-
     })
