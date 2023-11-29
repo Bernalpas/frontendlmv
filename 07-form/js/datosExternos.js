@@ -77,8 +77,20 @@
 
             contenedorTitulo.appendChild(titulo);
 
+            //creamos el botón
+            let boton = document.createElement('button');
+            boton.classList.add('btn', 'btn-primary');
+            boton.textContent = 'Comprar'
+            boton.onclick = function(){
+                alert(`Compraste el personaje ${personaje.name}`);
+            }
+
+            
             //subimos el contenedot del titulo a la card
             card.appendChild(contenedorTitulo);
+            
+            //agremaos el botón al contenedor
+            card.appendChild(boton);
 
             contenedorTarjetas.appendChild(card);
         });

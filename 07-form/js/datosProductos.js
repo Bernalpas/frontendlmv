@@ -21,6 +21,7 @@ fetch(URL)
 
     //3. Guardar los datos en una variable
     const productos = data;
+    const compras = [];
 
     //console.log(personajes);
 
@@ -52,9 +53,34 @@ fetch(URL)
 
         contenedorTitulo.appendChild(titulo);
 
+        //creamos el botón
+        let boton = document.createElement('button');
+        boton.classList.add('btn', 'btn-primary');
+        boton.textContent = 'Comprar'
+        boton.onclick = function(){
+            alert(`Compraste el Producto ${producto.title}`);
+            compras.push(producto);
+            localStorage.setItem('Compra', JSON.stringify(compras));
+        }
+
         //subimos el contenedot del titulo a la card
         card.appendChild(contenedorTitulo);
 
+        card.appendChild(boton);
+
         contenedorTarjetas.appendChild(card);
+
+        
     });
+})
+
+let borrarCarrito = document.getElementById('borrarCarrito');
+
+borrarCarrito.addEventListener('click', (e) => {
+
+    alert('Quiere borrar las compras?')
+    e.preventDefault();
+    localStorage.removeItem('Compra');
+    location.reload();
+    
 })
